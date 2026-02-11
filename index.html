@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Vishwajeet R. Yadav</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Training & Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Vishwajeet R. Yadav</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Training & Certifications</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Vishwajeet R. Yadav profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Vishwajeet .R. Yadav</h1>
+      <p class="section__text__p2">Full Stack WebDeveloper</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/vishwajeet-yadav4/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/VishwajeetVortex'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Skills</h3>
+            <p>Languages: C++, Java, React.js, Node.js, MySQl <br />Tools/Platforms: Git, MongoDb </p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Lovely Professional University
+              <br>
+              2023 - Present
+              <br>
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I’m a Computer Science undergraduate with a strong curiosity for how technology shapes the world around us.
+            My academic journey has allowed me to explore core areas of computing, including problem-solving through
+            algorithms, building efficient data structures, and designing reliable software systems, while also gaining
+            exposure to emerging fields like artificial intelligence.
+
+            I’ve developed practical programming skills in Java, Python, and C++, and I enjoy turning theoretical
+            concepts into working solutions through hands-on projects and experimentation with modern tools and
+            frameworks. I’m especially interested in understanding not just how things work, but why they work the way
+            they do.
+
+            Driven by continuous learning and innovation, I’m always looking for opportunities to grow, collaborate, and
+            challenge myself. I aspire to contribute to impactful projects and be part of solutions that push technology
+            forward. Let’s connect and exchange ideas in the ever-expanding world of computer science
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Training</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Data Structures and Algorithms</h2>
+          <p>Training in C++</p>
+          <br>
+          <p>Successfully completed a remote training program on Data Structures and Algorithms using C++ under School
+            CSE LPU
+            Practiced implementing key data structures such as arrays, linked lists, stacks, queues, and trees.
+            Developed a strong understanding of algorithm design, time complexity, and efficient problem-solving
+            techniques.
+            Strengthened analytical and logical thinking essential for technical interviews and software development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certifications'" />
+  </section>
+  <section id="certifications">
+    <p class="section__text__p1">Showcasing My</p>
+    <h1 class="title">Certifications</h1>
+    <div class="certifications-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="certification-title">ChatGPT-4 Prompt Engineering: ChatGPT Generative AI & LLM</h2>
+          <p>Infosys | <a href="https://drive.google.com/drive/folders/1B1Xh353AUGRRM3RsPV7HhvwEdEf_TkPB"
+              target="_blank">Link</a> | Aug'25</p>
+        </div>
+        <div class="details-container">
+          <h2 class="certification-title">
+            Master Generative AI & Generative AI tools (ChatGPT & more)</h2>
+          <p>Infosys | <a href="https://drive.google.com/drive/folders/1B1Xh353AUGRRM3RsPV7HhvwEdEf_TkPB"
+              target="_blank">Link</a> | Aug'25
+          </p>
+        </div>
+        <div class="details-container">
+          <h2 class="certification-title">Programming in Java</h2>
+          <p>NeoColab | <a href="https://drive.google.com/drive/folders/1B1Xh353AUGRRM3RsPV7HhvwEdEf_TkPB"
+              target="_blank">Link</a> | Mar'25</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Quizoid Project" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Quiz404 - Web-Based Quiz Application</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+          </div>
+          <p>📊 Quiz404
+
+            A dynamic quiz application with smooth gameplay, real-time scoring, and interactive UI — built to make
+            learning fun and engaging.</p>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Salon Appointment Booking System" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">LearHub - Online peer to peerLearning Platform</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/VishwajeetVortex/LearnHub'">
+              Github
+            </button>
+          </div>
+          <br>
+          <p>📘 LearnHub
+
+            A collaborative peer-to-peer learning platform where students share resources, discuss topics, and grow
+            together. Built with a modern, scalable frontend for seamless learning experiences.</p>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Bloom Buddy Chatbot" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Bloom Buddy Chatbot</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+          </div>
+          <br>
+          <p>🌱 Bloom-Buddy
+
+            An AI-powered smart plant assistant that monitors plant health using sensors and delivers real-time insights
+            with interactive feedback.</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:vishwajeet404@gmail.com">vishwajeet404@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/vishwajeet-yadav/">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon phone-icon" />
+        <p><a href="tel:+1234567890">+91 7709806571</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2026 Vishwajeet R. Yadav. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
